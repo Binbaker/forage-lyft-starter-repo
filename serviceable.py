@@ -1,6 +1,6 @@
 from abc import ABC, abstractmethod
 
-class Serviable(ABC):
+class Serviceable(ABC):
 
     @abstractmethod
     def need_service(self):

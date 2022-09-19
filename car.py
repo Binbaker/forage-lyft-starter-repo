@@ -1,10 +1,10 @@
-from servicable import Serviceable
+from serviceable import Serviceable
 
 class Car(Serviceable):
-    def __init__(self, engine, battery):
-        self._engine = engine
-        self._battery = battery
+    def __init__(self, engine, battery) -> None:
+        self.engine = engine
+        self.battery = battery
 
     def need_serivce(self) -> bool:
-        return self._engine.need_serivce() or self._battery.need_serivce() 
+        return self.engine.need_serivce() or self.battery.need_serivce() 
         
